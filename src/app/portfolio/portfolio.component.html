@@ -1,0 +1,40 @@
+<section class="portfolio py-5 bg-white text-dark">
+  <div class="container">
+    <h2 class="text-center fw-bold">PORTFOLIO</h2>
+
+    <!-- Divider -->
+    <div class="divider d-flex align-items-center justify-content-center my-3">
+      <div class="line"></div>
+      <i class="fa-solid fa-star mx-2"></i>
+      <div class="line"></div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4" *ngFor="let item of portfolioItems">
+        <div class="card shadow-sm border-0">
+          <img [src]="item.img" class="card-img-top"
+               alt="portfolio item"
+               (click)="openModal(item)">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ item.title }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">{{ selectedItem?.title }}</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img [src]="selectedItem?.img" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
