@@ -1,8 +1,8 @@
 {
   "routes": {
-    "/startFramework": {},
-    "/startFramework/about": {},
-    "/startFramework/contact": {},
-    "/startFramework/portfolio": {}
+    "/angularJESUS": {},
+    "/angularJESUS/about": {},
+    "/angularJESUS/contact": {},
+    "/angularJESUS/portfolio": {}
   }
 }

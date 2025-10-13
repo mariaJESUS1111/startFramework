@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/startFramework',
+  basePath: '/angularJESUS',
   supportedLocales: {
   "en-US": ""
 },
